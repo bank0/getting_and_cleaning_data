@@ -12,12 +12,12 @@ fetch_data <- function() {
         download.file(url,
                       method="wget",
                       destfile="Dataset.zip")
+    }
 
-        # Check if dataset is already extracted
-        if (!file.exists("./UCI HAR Dataset")) {
-            # Unzip downloaded dataset
-            unzip(dataset_zip)
-        }
+    # Check if dataset is already extracted
+    if (file.exists(dataset_zip) && !file.exists("./UCI HAR Dataset")) {
+        # Unzip downloaded dataset
+        unzip(dataset_zip)
     }
 
     # Make sure files have been properly extracted
