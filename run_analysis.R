@@ -98,3 +98,5 @@ dataset_melt <- melt(dataset,
 # each measurement and order it by Subject & Activity
 tidy_set <- dcast(dataset_melt, Subject + Activity ~ variable, mean)
 write.table(tidy_set, "./TidyDataSet.txt", row.name=FALSE)
+
+print(tidy_set)
