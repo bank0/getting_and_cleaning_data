@@ -11,39 +11,36 @@ the <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+U
 Learning Repository</a>
 * <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ">Human Activity Recognition</a>
 
----
 ## Files in project
   * README.md       - Readme markdown file
   * CodeBook.md     - CodeBook describing output parameters
   * run_analysis.R  - Script performing analysis
   * TidyDataSet.txt - Output file describing the tidy dataset
 
----
 ## Dependencies
 
 * An 'R' environment installed and working.
 * 'reshape2' and 'dplyr' packages installed
 
-'''
+```
 install.packages("reshape2")
 install.packages("dplyr")
-'''
+```
 
 Loading the packages is handled in the script.
 
----
 ## Running the script
 
-Open any preferred R console and execute below command in working directory:
-'''
+Open any preferred R console and execute below command in workset directory:
+```
 source("run_analysis.R")
-'''
----
+```
+
 ## Output
 
 Two datasets are produced:
-1. 'dataset'
-2. 'tidySet' (TidyDataSet.txt)
+1. dataset
+2. tidySet (TidyDataSet.txt)
 
 Both datasets share the same variables, the difference is that 'dataset' holds
 the complete measurement data, multiple entries of the same activity for each

@@ -1,9 +1,9 @@
 ### Data Description
-Document describing output variables from script 'run_analysis.R'.
+Document describing output variables from script "run_analysis.R".
 
 Two datasets are produced:
-1. 'dataset'
-2. 'tidySet' (TidyDataSet.txt)
+1. dataset
+2. tidySet (TidyDataSet.txt)
 
 Both datasets share the same variables, the difference is that 'dataset' holds
 the complete measurement data, multiple entries of the same activity for each
@@ -12,7 +12,7 @@ measurement per activity and user. Only parameters describing mean and
 standard deviation are covered in this analysis.
 
 Four column example data from TidyDataSet.txt
-'''
+
 | Subject | Activity           | tBodyAccMeanX     | tBodyAccMeanY        | ... |
 |---------|--------------------|-------------------|----------------------|-----|
 | 1       | LAYING             | 0.22159824394     | -0.0405139534294     | ... |
@@ -23,17 +23,16 @@ Four column example data from TidyDataSet.txt
 | 1       | WALKING_UPSTAIRS   | 0.255461689622641 | -0.0239531492643396  | ... |
 | 2       | LAYING             | 0.281373403958333 | -0.0181587397583333  | ... |
 | 2       | SITTING            | 0.27708735173913  | -0.0156879937282609  | ... |
-'''
 
----
+
 ### Variables
 * Subject
-  * Identifies individual participants
-    * Range: 1..30
+  * Description: Identifies individual participants
+  * Range: 1..30
 
 * Activity
-  * Executed Activity
-    * Possible values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+  * DescriptionExecuted Activity
+  * Possible values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
 * tBodyAccMeanX
 * tBodyAccMeanY
@@ -102,9 +101,9 @@ Four column example data from TidyDataSet.txt
 * fBodyBodyGyroJerkMagMean
 * fBodyBodyGyroJerkMagStd
   * :For all of the above:
-   * Std: Standard deviation
-   * Mean: Mean value
-   * Gyro: Measurements from Gyroscope
-   * Acc: Measurements from Accelerometer
-   * t: time domain
-   * f: frequency domain
+    * Std: Standard deviation
+    * Mean: Mean value
+    * Gyro: Measurements from Gyroscope
+    * Acc: Measurements from Accelerometer
+    * t: time domain
+    * f: frequency domain
