@@ -38,7 +38,8 @@ source("run_analysis.R")
 
 ## Output
 
-Two datasets are produced:
+Two datasets are produced
+
 1. dataset
 2. tidySet (TidyDataSet.txt)
 

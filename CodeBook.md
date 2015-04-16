@@ -1,7 +1,8 @@
 ### Data Description
 Document describing output variables from script "run_analysis.R".
 
-Two datasets are produced:
+Two datasets are produced
+
 1. dataset
 2. tidySet (TidyDataSet.txt)
 
