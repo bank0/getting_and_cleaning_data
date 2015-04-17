@@ -4,7 +4,7 @@ Document describing output variables from script "run_analysis.R".
 Two datasets are produced
 
 1. dataset
-2. tidySet (TidyDataSet.txt)
+2. tidy_set (TidyDataSet.txt)
 
 Both datasets share the same variables, the difference is that 'dataset' holds
 the complete measurement data, multiple entries of the same activity for each

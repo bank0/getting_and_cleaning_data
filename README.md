@@ -2,7 +2,7 @@
 The purpose of this script written in 'R' is to download and clean a dataset
 with measured accelerometer and gyroscope sensor values mapping to different
 activities and users. The raw measurement values are produced by wearing a
-smart phone on the wrist while performing different activities. 
+smartphone on the wrist while performing different activities. 
 
 See CodeBook.md for a complete description of the extracted variables.
 
@@ -41,9 +41,9 @@ source("run_analysis.R")
 Two datasets are produced
 
 1. dataset
-2. tidySet (TidyDataSet.txt)
+2. tidy_set (TidyDataSet.txt)
 
-Both datasets share the same variables, the difference is that 'dataset' holds
+Both dataset share the same variables, the difference is that 'dataset' holds
 the complete measurement data, multiple entries of the same activity for each
 subject, while 'tidySet' summarize 'dataset' into average values for each
 measurement per activity and user. Only parameters describing mean and
