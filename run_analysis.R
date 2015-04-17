@@ -1,3 +1,10 @@
+###########################################################################
+# Script downloads, extracts and casts a smartphone sensor values into    #
+# a tidy data set and summarizes measured values by user and activity.    #
+# Task is part of course "Getting and Cleaning Data" held by John Hopkins #
+# University at coursera.org                                              #
+###########################################################################
+
 library("reshape2")
 library("dplyr")
 
@@ -89,7 +96,7 @@ dataset <- rbind(dataset_train, dataset_test)
 
 # Task 5: Create a Tidy dataset
 # Melt the combined dataset by ids; Subject and Activity
-# Exclude Subject, Activity and Set variables from the measured variables
+# Exclude Subject and Activity variables from the measured variables
 dataset_melt <- melt(dataset,
                     id=names(select(dataset, (Subject:Activity))),
                     measure.vars=names(select(dataset, -(Subject:Activity))))
